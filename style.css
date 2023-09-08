@@ -1,0 +1,181 @@
+/* universal styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #92949e;
+    
+    padding: 200px;
+}
+
+/* list styling */
+.todo-list {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 20px auto; 
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* heading styling */
+.todo-list h2{
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* image styling of the list */
+.todo-list h2 img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+/* search bar styling */
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin: 5px;
+    
+}
+
+/* input styling */
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-weight: 14px;
+    
+}
+
+/* button styling */
+#add-button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #82877e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* list stylings */
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 15px 8px 15px 50px;
+   
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* styling for list before clicking */
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./assets/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+/* styling for when clicked on a task */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+/* styling for icon of checked */
+ul li.checked::before{
+    background-image: url(./assets/checkmark-png-25959.png);
+}
+
+/* styling for cross icon */
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* hovering for cross icon */
+ul li span:hover{
+    background: #edeef0;
+}
+
+
+
+
+/* Add this CSS to style the buttons */
+.filter-buttons {
+    text-align: right;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/* styling for the action buttons */
+.action-button {
+    background-color: transparent;
+    border: none;
+    color: rgb(133, 133, 160);
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* styling for the action buttons while hovering */
+.action-button:hover {
+    color: rgb(151, 151, 155);
+}
+
+
+/* styling for footer section */
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #ccc; /* Add a border to separate it from the list */
+}
+
+/* footer line styling */
+footer hr {
+    margin-top: 20px; /* Add some space between "Tasks Left" and the <hr> */
+}
+
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="todo-list">
+            <!-- heading and icon -->
+            <h2>To-Do List <img src="./assets/todoicon.png"></h2>
+
+            <!-- search bar -->
+            <div class="search">
+                <input type="text" id="search-bar" placeholder="Add your task">
+                <button id="add-button" onclick="addTask()">Add</button>
+            </div>
+
+            <!-- list -->
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+            <!-- Footer buttons -->
+            <div class="footer-container">
+                <footer>
+                    
+                    <!-- buttons -->
+                    
+                    <div class="filter-buttons">
+                        
+                        <button class="action-button" id="show-all">All</button>
+
+                        <button class="action-button" onclick="filterCompleted()">Completed</button>
+                        <button class="action-button" onclick="filterIncomplete()">Uncomplete</button>
+                        <button class="action-button" id="clear-selected">Clear Selected</button>
+                    </div>
+                    
+                    <!-- Tasks counter -->
+                    <div class="footer-section">
+                        <p id="tasks-left">Tasks Left: 0</p>
+                        <button class="action-button" id="clear-all">Clear All</button>
+                    </div>
+                </footer>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
